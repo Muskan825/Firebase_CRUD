@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Form</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2>CRUD with Firebase</h2>
+        <hr>
+        <div class="form">
+            <form action="">
+                Roll No&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="roll"><br><br>
+                Name&nbsp;: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="name"><br><br>
+                Gender &nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select name="gender" id="gen">
+                    <option value="" selected disabled>Select Choice</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Others">Others</option>
+                </select><br><br>
+                Address&nbsp;:&nbsp; &nbsp;&nbsp;&nbsp;<input type="text" id="address"><br><br>
+                <div class="btn">
+                    <button id="insert">Insert</button>
+                    <button id="read">Read</button>
+                    <button id="update">Update</button>
+                    <button id="delete">Delete</button>
+                </div>
+            </form><br><br>
+            <a href="./datas.html">See the complete List</a>
+        </div> 
+    </div> 
+    <script type="module" src="./firebaseConfig.js"></script>
+    <script type="module" src="./script.js"></script>
+    
+</body>
+</html>
